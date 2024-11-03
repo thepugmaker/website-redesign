@@ -20,6 +20,7 @@ const config: Config = {
       },
       animation: {
         wiggle: 'wiggle 4s ease-in-out infinite',
+        wiggleotherone: 'wiggle 7s ease-in-out infinite',
       },
     },
   },
