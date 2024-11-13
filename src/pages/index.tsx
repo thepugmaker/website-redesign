@@ -14,9 +14,7 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-<head>
-  <title>MrPugPug</title>
-</head>
+<title>MrPugPug</title>
 
 console.log("%c" + "Hey you looking through my code???", "color: #0077ff; font-size: 24px; font-weight: bold;");
 console.log("%c" + "Your looking in the wrong place you won't get far here!", "color: #0077ff; font-size: 24px; font-weight: bold;");
@@ -45,15 +43,18 @@ export default function Home() {
           </dd>
         </button>
       </div>
-      <div className={`transition-opacity duration-500 ${projectsDiv ? 'opacity-100' : 'opacity-0'} fixed top-[10rem] left-[68rem] p-4`} id="projectsdiv">
-        <button className="hover:bg-slate-900 flex justify-center items-center shadow-md rounded-xl w-40 h-36 bg-black transition duration-500 animate-wiggleotherone">
-          <dd className="font-medium font-mono text-white">
+      <div className={`transition-opacity duration-500 flex items-center ${projectsDiv ? 'opacity-100' : 'opacity-0'} fixed top-[10rem] left-[68rem] `} id="projectsdiv">
+        <div className="rounded-xl flex items-center justify-center dark:bg-slate-600 shadow-md w-96 h-48">
+          <dd className="font-medium font-mono text-white mt-2">
             Astro cat
           </dd>
-        </button>
+          <button className="rounded-lg flex justify-center items-center shadow-sm bg-slate-800 hover:bg-black transition duration-500 mt-10" id="astrocatprojectinfo" onClick={handleAstroCatProjectClick}>
+            <dd className="font-small font-mono text-white">
+              More info
+            </dd> 
+          </button>
+        </div>
       </div>
-      <footer>
-      </footer>
     </div>
   );
 }
