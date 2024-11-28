@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className="items-center justify-items-center min-h-screen">
-        <h1 className="text-black dark:text-white font-medium font-mono">
+        <h1 className="text-black dark:text-white font-medium font-mono rounded-xl">
             Here is some stuff about me!
         </h1>
         <div className="h-auto w-auto bg-gradient-to-r from-red-500 to-blue-600 justify-items-center">
