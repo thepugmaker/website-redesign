@@ -18,17 +18,17 @@ export default function Home() {
 
   return (
     <div className="items-center justify-items-center min-h-screen">
-      <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
+      <h1 className="mt-4 text-black dark:text-white font-medium font-mono">
         These are my projects
       </h1>
-      <div className="h-auto w-auto bg-gradient-to-r from-red-500 to-blue-600 justify-items-center rounded-xl">
+      <div className="h-auto w-auto bg-gradient-to-r from-red-500 to-blue-600 justify-items-center rounded-xl p-4">
         <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl mt-10 ml-4" onClick={() => router.push('/projects/AstroCat')}>
+          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4" onClick={() => router.push('/projects/AstroCat')}>
             <dd className="text-white font-medium font-mono">
               Astro cat
             </dd>
           </button>
-          <a className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl mt-10 ml-4 justify-center items-center" href="https://modrinth.com/mod/day-countr">
+          <a className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-8" href="https://modrinth.com/mod/day-countr">
             <dd className="text-white font-medium font-mono">
               DayCountr Minecraft mod
             </dd>

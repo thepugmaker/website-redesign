@@ -22,14 +22,14 @@ export default function Home() {
         I'm MrPugPug and I'm a developer
       </h1>
       <div className="mt-16">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-700 h-40 w-96 justify-items-center rounded-xl">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-700 h-40 w-96 p-2 justify-items-center rounded-xl">
           <dd className="text-white font-medium mt-2 font-mono">
             I'm a developer of many things
           </dd>
           <dd className="text-white font-medium mt-6 font-mono">
             I'm a web, game, and software developer
           </dd>
-          <button className="h-16 w-32 bg-gradient-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" onClick={() => router.push('/about')}>
+          <button className="h-16 w-36 bg-gradient-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" onClick={() => router.push('/about')}>
             <dd className="text-white font-medium font-mono">
               More about me!
             </dd>
