@@ -21,11 +21,11 @@ export default function Home() {
       <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
         Some links that are important
       </h1>
-      <a className="rounded-xl bg-blue-500 w-40 h-10 mt-12" href="https://github.com/thepugmaker">
+      <button className="rounded-xl bg-blue-500 w-40 h-10 mt-12" onClick={() => router.push('https://github.com/thepugmaker')}>
         <dd className="text-white font-medium font-mono">
             Github account
         </dd>
-      </a>
+      </button>
     </div>
   );
 }

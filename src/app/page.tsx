@@ -22,7 +22,7 @@ export default function Home() {
         I'm MrPugPug and I'm a developer
       </h1>
       <div className="mt-16">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center rounded-xl">
+        <div className="bg-gradient-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center rounded-xl border-red-500 border-2">
           <dd className="text-white font-medium mt-2 font-mono">
             I'm a developer of many things
           </dd>
@@ -36,22 +36,18 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="mt-24">
+      <div className="mt-24 gird grid-flow-col">
         <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={() => router.push('/projects')}>
           <dd className="text-white font-medium font-mono">
             My projects!
           </dd>
         </button>
-      </div>
-      <div className="mt-36">
-        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggleotherone" onClick={() => router.push('/contact')}>
+        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggletwo" onClick={() => router.push('/contact')}>
           <dd className="text-white font-medium font-mono">
             Contact me
           </dd>
         </button>
-      </div>
-      <div className="mt-48">
-        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={() => router.push('/morelinks')}>
+        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggleotherone" onClick={() => router.push('/morelinks')}>
           <dd className="text-white font-medium font-mono">
             More links
           </dd>
