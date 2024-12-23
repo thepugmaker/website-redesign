@@ -26,6 +26,11 @@ export default function Home() {
             Github account
         </dd>
       </button>
+      <button className="rounded-xl bg-blue-500 w-40 h-10 mt-16" onClick={() => router.push('https://youtube.com/@mrpugpug')}>
+        <dd className="text-white font-medium font-mono">
+            YouTube channel
+        </dd>
+      </button>
     </div>
   );
 }

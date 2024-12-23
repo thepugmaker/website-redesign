@@ -29,9 +29,9 @@ export default function Home() {
                 I design websites, software, and games with different types of styles. I use Figma for website, and software designs, I use Google DOCs for most game designs.
             </dd>
             <dd className="text-white font-medium font-mono mt-10">
-                My skills for web development are React, Tailwind css, HTML and CSS, NextJS, Typescript, Javascript. 
+                My skills for web development are React, Tailwind css, HTML and CSS, NextJS, Typescript, Javascript.
                 Software development are .NET, Cmake, Java Swing, C++ QT, and Python QT.
-                Game development are Unity, Java LWJGL, Unreal Engine, and Python Pygame.
+                Game development are Unity, Java LWJGL, Unreal Engine, Roblox Studio, and Python Pygame.
                 These are ones I've made things I've probably made more with other things, but I'm not fluent in some of these programming languages.
             </dd>
             <dd className="text-white font-medium font-mono mt-20">

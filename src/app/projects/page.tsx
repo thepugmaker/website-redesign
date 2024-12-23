@@ -28,11 +28,16 @@ export default function Home() {
               Astro cat
             </dd>
           </button>
-          <a className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-8" href="https://modrinth.com/mod/day-countr">
+          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-8" onClick={() => router.push('https://modrinth.com/mod/day-countr')}>
             <dd className="text-white font-medium font-mono">
               DayCountr Minecraft mod
             </dd>
-          </a>
+          </button>
+          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-2" onClick={() => router.push('https://puggamedev.itch.io/scale-to-form')}>
+            <dd className="text-white font-medium font-mono">
+              Scale to form, A game made for GMTK Game jam 2024
+            </dd>
+          </button>
         </div>
       </div>
     </div>
