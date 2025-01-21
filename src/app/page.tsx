@@ -9,7 +9,7 @@ const metadata: Metadata = {
   description: "This is MrPugPugs website!",
 };
 
-console.log("%c" + "Hey you looking through my code???", "color: #0077ff; font-size: 24px; font-weight: bold;");
+console.log("%c" + "Hey you looking through my code?", "color: #0077ff; font-size: 24px; font-weight: bold;");
 console.log("%c" + "Your looking in the wrong place you won't get far here!", "color: #0077ff; font-size: 24px; font-weight: bold;");
 console.log("%c" + "Go to my GitHub REPO: https://github.com/thepugmaker/website-redesign", "color: #0077ff; font-size: 24px; font-weight: bold;");
 
