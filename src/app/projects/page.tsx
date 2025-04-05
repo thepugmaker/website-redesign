@@ -23,7 +23,7 @@ export default function Home() {
       </h1>
       <div className="h-auto w-auto bg-gradient-to-r from-red-500 to-blue-600 justify-items-center rounded-xl p-4">
         <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-          /* <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4" onClick={() => router.push('/projects/AstroCat')}>
+          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4" onClick={() => router.push('/projects/AstroCat')}>
             <dd className="text-white font-medium font-mono">
               Astro cat
             </dd>
@@ -37,20 +37,10 @@ export default function Home() {
             <dd className="text-white font-medium font-mono">
               Scale to form, A game made for GMTK Game jam 2024
             </dd>
-          </button> */
-          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4" onClick={() => router.push('https://www.youtube.com/watch?v=dQw4w9WgXcQ')}>
-            <dd className="text-white font-medium font-mono">
-              Astro cat
-            </dd>
           </button>
-          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-8" onClick={() => router.push('https://www.youtube.com/watch?v=dQw4w9WgXcQ')}>
+          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-12" onClick={() => router.push('https://packetloss.mrpugpug.com')}>
             <dd className="text-white font-medium font-mono">
-              DayCountr Minecraft mod
-            </dd>
-          </button>
-          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-2" onClick={() => router.push('https://www.youtube.com/watch?v=dQw4w9WgXcQ')}>
-            <dd className="text-white font-medium font-mono">
-              Scale to form, A game made for GMTK Game jam 2024
+              PacketLoss Expilot Client
             </dd>
           </button>
         </div>
