@@ -38,9 +38,9 @@ export default function Home() {
               Scale to form, A game made for GMTK Game jam 2024
             </dd>
           </button>
-          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4 p-12" onClick={() => router.push('https://packetloss.mrpugpug.com')}>
+          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4" onClick={() => router.push('https://packetloss.mrpugpug.com')}>
             <dd className="text-white font-medium font-mono">
-              PacketLoss Expilot Client
+                PacketLoss Expilot Client
             </dd>
           </button>
         </div>
