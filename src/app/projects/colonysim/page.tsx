@@ -25,11 +25,6 @@ export default function Home() {
         <dd className="text-white font-medium font-mono mt-4 ">
             Work in progress, developed with Unity 6. 2D Side view. Smooth, Not a grid.
         </dd>
-        <button className="mt-8 bg-gradient-to-r from-purple-900 to-emerald-950 h-24 w-48 hover:from-purple-600 hover:to-emerald-500 rounded-xl" onClick={() => router.push('https://puggamedev.itch.io/astro-cat')}>
-            <dd className="text-white font-medium font-mono">
-                Game page
-            </dd>
-        </button>
       </div>
     </div>
   );
