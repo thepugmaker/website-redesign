@@ -23,16 +23,20 @@ export default function Home() {
         </h1>
         <div className="h-auto w-auto bg-gradient-to-r from-red-500 to-blue-600 justify-items-center rounded-xl m-12 p-6">
             <dd className="text-white font-medium font-mono mt-4">
-                I develop websites, software, and games. Most of my games are at https://puggamedev.itch.io/
-            </dd>
-            <dd className="text-white font-medium font-mono mt-8">
-                I design websites, software, and games with different types of styles. I use Figma for website, and software designs, I use Google DOCs for most game designs.
+                I develop websites, software, and games. My game downloads are at https://puggamedev.itch.io/
             </dd>
             <dd className="text-white font-medium font-mono mt-10">
-                My skills for web development are React, Tailwind css, HTML and CSS, NextJS, Typescript, Javascript.
-                Software development are .NET, Cmake, Java Swing, C++ QT, and Python QT.
-                Game development are Unity, Java LWJGL, Unreal Engine, Roblox Studio, and Python Pygame.
-                These are ones I've made things I've probably made more with other things, but I'm not fluent in some of these programming languages.
+                Linux is another thing I like, I've used Arch Linux, Ubuntu, Kbuntu, Fedora, and Qubes.
+            </dd>
+            <dd className="text-white font-medium font-mono mt-8">
+                Designer of websites, software, and games (Based on my favorite genre of games). Designs are existing in Figma or my head, sometimes on paper.
+            </dd>
+            <dd className="text-white font-medium font-mono mt-10">
+                Programming skills I own.
+                Web development - React, Tailwind css, HTML and CSS, NextJS, and Typescript.
+                Software development - .NET, C++, and Java.
+                Game development - Unity, Unreal Engine, and Roblox Studio.
+                These langauges are the ones I have experience with.
             </dd>
             <dd className="text-white font-medium font-mono mt-20">
                 This website was made with React, NextJS, Tailwind CSS, and the NextJS app router.
