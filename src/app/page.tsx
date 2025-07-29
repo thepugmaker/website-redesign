@@ -44,7 +44,7 @@ export default function Home() {
         I'm MrPugPug and I'm a developer
       </h1>
       <div className="mt-16">
-        <div className="bg-linear-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center rounded-xl border-red-500 border-2">
+        <div className="bg-linear-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center items-center rounded-xl border-red-500 border-2">
           <dd className="text-white font-medium mt-2 font-mono">
             I'm a developer of many things
           </dd>
@@ -78,7 +78,7 @@ export default function Home() {
         <h1 className="mt-4 text-black dark:text-white font-medium font-mono">
           Website updates
         </h1>
-        <div className="bg-white rounded-xl h-150 w-72 p-6 mt-20">
+        <div className="bg-white rounded-xl h-32 w-72 p-6 mt-20">
           <span className="text-black font-medium font-mono">{commitMessage}</span>
         </div>
       </div>
