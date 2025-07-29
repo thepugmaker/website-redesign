@@ -51,11 +51,13 @@ export default function Home() {
           <dd className="text-white font-medium mt-6 font-mono">
             I'm a web, game, and software developer
           </dd>
-          <button className="h-16 w-36 bg-linear-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" onClick={() => router.push('/about')}>
-            <dd className="text-white font-medium font-mono">
-              More about me!
-            </dd>
-          </button>
+          <div className="justify-items-center items-center">
+            <button className="h-16 w-36 bg-linear-to-r from-purple-900 to-red-900 rounded-xl hover:from-purple-500 hover:to-red-700 transition duration-500" onClick={() => router.push('/about')}>
+              <dd className="text-white font-medium font-mono">
+                More about me!
+              </dd>
+            </button>
+          </div>
         </div>
       </div>
       <div className="mt-24 gird grid-flow-col">
