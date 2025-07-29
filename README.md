@@ -8,6 +8,13 @@ React JS, With Next JS App router,
 Tailwind css,
 Typescript
 
+### Guide
+To edit or use my code you will need to install node.js, and next.js. 
+I suggest using VSCode and the tailwind css plugin.
+After you have install the required components, clone with git, and open it in your ide.
+Once that is done you'll want to run ```npm run build``` to get node and next js working. 
+When the build is done you'll be ready to start development or running my website source code!
+
 ### Run the development server
 
 ```bash

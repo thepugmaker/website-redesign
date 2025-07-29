@@ -38,11 +38,6 @@ export default function Home() {
               Scale to form, A game made for GMTK Game jam 2024
             </dd>
           </button>
-          <button className="bg-gradient-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 rounded-xl ml-4" onClick={() => router.push('/projects/colonysim')}>
-            <dd className="text-white font-medium font-mono">
-              Work In Progress Colony Sim game
-            </dd>
-          </button>
         </div>
       </div>
     </div>
