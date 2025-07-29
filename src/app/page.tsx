@@ -44,14 +44,14 @@ export default function Home() {
         I'm MrPugPug and I'm a developer
       </h1>
       <div className="mt-16">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center rounded-xl border-red-500 border-2">
+        <div className="bg-linear-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center items-center rounded-xl border-red-500 border-2">
           <dd className="text-white font-medium mt-2 font-mono">
             I'm a developer of many things
           </dd>
           <dd className="text-white font-medium mt-6 font-mono">
             I'm a web, game, and software developer
           </dd>
-          <button className="h-16 w-36 bg-gradient-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" onClick={() => router.push('/about')}>
+          <button className="h-16 w-36 bg-linear-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" onClick={() => router.push('/about')}>
             <dd className="text-white font-medium font-mono">
               More about me!
             </dd>
@@ -59,17 +59,17 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-24 gird grid-flow-col">
-        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={() => router.push('/projects')}>
+        <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={() => router.push('/projects')}>
           <dd className="text-white font-medium font-mono">
             My projects!
           </dd>
         </button>
-        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggletwo" onClick={() => router.push('/contact')}>
+        <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggletwo" onClick={() => router.push('/contact')}>
           <dd className="text-white font-medium font-mono">
             Contact me
           </dd>
         </button>
-        <button className="rounded-xl bg-gradient-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggleotherone" onClick={() => router.push('/morelinks')}>
+        <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggleotherone" onClick={() => router.push('/morelinks')}>
           <dd className="text-white font-medium font-mono">
             More links
           </dd>
@@ -78,7 +78,7 @@ export default function Home() {
         <h1 className="mt-4 text-black dark:text-white font-medium font-mono">
           Website updates
         </h1>
-        <div className="bg-white rounded-xl h-150 w-72 p-6 mt-20">
+        <div className="bg-white rounded-xl h-32 w-72 p-6 mt-20">
           <span className="text-black font-medium font-mono">{commitMessage}</span>
         </div>
       </div>

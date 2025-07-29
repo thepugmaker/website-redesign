@@ -22,8 +22,8 @@ export default function Home() {
         I'm MrPugPug and I'm a developer
       </h1>
       <div className="mt-16">
-        <div className="bg-gradient-to-r from-blue-500 to-purple-700 h-auto w-auto justify-items-center rounded-xl">
-            <a className="h-16 w-32 bg-gradient-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" href="mailto:contact@mrpugpug.com">
+        <div className="bg-linear-to-r from-blue-500 to-purple-700 h-auto w-auto justify-items-center rounded-xl">
+            <a className="h-16 w-32 bg-linear-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700" href="mailto:contact@mrpugpug.com">
                 <dd className="text-white font-medium mt-2 font-mono p-8 animate-wiggle">
                     Email me!
                 </dd>
