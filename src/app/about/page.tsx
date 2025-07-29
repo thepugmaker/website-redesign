@@ -21,7 +21,7 @@ export default function Home() {
         <h1 className="text-black dark:text-white font-medium font-mono rounded-xl">
             Here is some stuff about me!
         </h1>
-        <div className="h-auto w-auto bg-gradient-to-r from-red-500 to-blue-600 justify-items-center rounded-xl m-12 p-6">
+        <div className="h-auto w-auto bg-linear-to-r from-red-500 to-blue-600 justify-items-center rounded-xl m-12 p-6">
             <dd className="text-white font-medium font-mono mt-4">
                 I develop websites, software, and games. My game downloads are at https://puggamedev.itch.io/
             </dd>
