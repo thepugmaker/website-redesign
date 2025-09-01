@@ -27,9 +27,6 @@ export default function Home() {
     const [showExtraDivs, setExtraLinks] = useState(false);
 
     const today = new Date();
-
-    const isBirthday =
-      today.getMonth() === 7 && today.getDate() === 24; 
    
     useEffect(() => {
       const repoUrl = 'https://api.github.com/repos/thepugmaker/website-redesign/commits';
@@ -49,12 +46,8 @@ export default function Home() {
       fetchCommitMessage();
     }, []);
 
-    const showAboutMeDiv = () => {
-      setShowAbout(true);
-    };
-
-    const unShowAboutMeDiv = () => {
-      setShowAbout(false);
+    const toggleAboutDiv = () => {
+      setShowAbout(!showAboutMeDivs);
     };
 
     const toggleWorkDiv = () => {
@@ -74,11 +67,6 @@ export default function Home() {
       <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
         Welcome to https://mrpugpug.com 
       </h1>
-      {isBirthday && (
-        <h1 className="mt-6 text-black dark:text-white font-medium font-mono">
-          Today is my Birthday as well!
-        </h1>
-      )}
       <div className="mt-16">
         <div className="bg-linear-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center items-center rounded-xl border-red-500 border-2">
           <dd className="text-white font-medium mt-2 font-mono">
@@ -88,7 +76,7 @@ export default function Home() {
             I create website, applcations, and games
           </dd>
           <div className="justify-items-center items-center">
-            <button className="h-16 w-36 bg-linear-to-r from-purple-900 to-red-900 rounded-xl hover:from-purple-500 hover:to-red-700 transition duration-500" onMouseEnter={showAboutMeDiv} onMouseLeave={unShowAboutMeDiv}>
+            <button className="h-16 w-36 bg-linear-to-r from-purple-900 to-red-900 rounded-xl hover:from-purple-500 hover:to-red-700 transition duration-500" onClick={toggleAboutDiv}>
               <dd className="text-white font-medium font-mono">
                 More about me!
               </dd>
@@ -112,9 +100,9 @@ export default function Home() {
                 Web development - React, Tailwind css, HTML and CSS, NextJS, and Typescript.
                 Software development - .NET, C++, and Java.
                 Game development - Unity, Unreal Engine, and Roblox Studio.
-                These langauges are the ones I have experience with.
+                These langauges/tools are the ones I have experience with.
             </dd>
-            <dd className="text-white font-medium font-mono mt-20">
+            <dd className="text-white font-medium font-mono mt-10">
                 This website was made with React, NextJS, Tailwind CSS, and the NextJS app router.
                 If you want to see the behind of the site look here! https://github.com/thepugmaker/website-redesign
             </dd>
