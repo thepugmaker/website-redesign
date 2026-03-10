@@ -6,14 +6,14 @@ import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react';
 import { gsap } from "gsap";
 
+import pfpimage from "./images/pfpimage.jpeg";
+
 const metadata: Metadata = {
   title: "MrPugPugs website",
   description: "This is MrPugPugs website!",
 };
 
-console.log("%c" + "Hey you looking through my code?", "color: #0077ff; font-size: 24px; font-weight: bold;");
-console.log("%c" + "Your looking in the wrong place you won't get far here!", "color: #0077ff; font-size: 24px; font-weight: bold;");
-console.log("%c" + "Go to my GitHub REPO: https://github.com/thepugmaker/website-redesign", "color: #0077ff; font-size: 24px; font-weight: bold;");
+console.log("https://github.com/thepugmaker/website-redesign");
 
 export default function Home() {
   const router = useRouter()
@@ -68,7 +68,8 @@ export default function Home() {
         Welcome to https://mrpugpug.com 
       </h1>
       <div className="mt-16">
-        <div className="bg-linear-to-r from-blue-500 to-purple-700 h-52 w-96 p-6 justify-items-center items-center rounded-xl border-red-500 border-2">
+        <div className="bg-linear-to-r from-blue-500 to-purple-700 h-84 w-96 p-6 justify-items-center items-center rounded-xl border-red-500 border-2">
+          <img src={pfpimage.src} alt="Logo" className="h-32 w-32 rounded-full mx-auto"></img>
           <dd className="text-white font-medium mt-2 font-mono">
             I'm a developer
           </dd>
