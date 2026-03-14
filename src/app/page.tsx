@@ -25,6 +25,7 @@ export default function Home() {
     const [showWorkDivs, setShowWork] = useState(false);
     const [showContactDivs, setShowContact] = useState(false);
     const [showExtraDivs, setExtraLinks] = useState(false);
+    const [showPancakePIcs, setPancakePics] = useState(false);
 
     const today = new Date();
    
@@ -62,6 +63,10 @@ export default function Home() {
       setExtraLinks(!showExtraDivs);
     };
 
+    const togglePancakeDivs = () => {
+      setPancakePics(!showPancakePIcs);
+    };
+
   return (
     <div className="items-center justify-items-center min-h-screen">
       <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
@@ -91,7 +96,7 @@ export default function Home() {
                 I develop websites, software, and games. My game downloads are at https://puggamedev.itch.io/
             </dd>
             <dd className="text-white font-medium font-mono mt-10">
-                Linux is another thing I like, I've used Arch Linux, Ubuntu, and Fedora.
+                Linux is another thing I like, I've used Arch Linux, Ubuntu, Kubuntu and Fedora.
             </dd>
             <dd className="text-white font-medium font-mono mt-8">
                 Designer of websites, software, and games (Based on my favorite genre of games). Designs are existing in Figma or my head, sometimes on paper.
@@ -147,8 +152,8 @@ export default function Home() {
                 <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
                   Discord username is mr.pugpug
                 </h1>
-                <a className="h-16 w-32 bg-linear-to-r from-purple-900 to-red-900 justify-self-center rounded-xl hover:from-purple-500 hover:to-red-700 mt-10" href="mailto:contact@mrpugpug.com">
-                    <dd className="text-white font-medium mt-2 font-mono p-8">
+                <a className="h-16 w-32 bg-linear-to-r from-purple-900 to-red-900 justify-self-center justify-items-center items-center rounded-xl hover:from-purple-500 hover:to-red-700 mt-10" href="mailto:contact@mrpugpug.com">
+                    <dd className="text-white font-medium mt-2 font-mono pt-3">
                         Email me!
                     </dd>
                 </a>
@@ -177,11 +182,27 @@ export default function Home() {
             </button>
           </div>
         )}
+         <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={togglePancakeDivs}>
+          <dd className="text-white font-medium font-mono">
+            Show Pics of my dog Pancake
+          </dd>
+        </button>
+        {showPancakePIcs && (
+          <div className="mt-16">
+            <div className="bg-linear-to-r from-blue-500 to-purple-700 rounded-xl w-160 h-64 flex justify-between">
+                <h1 className="mt-4 text-black dark:text-white font-medium font-mono pl-2 pt-2">
+                  Pancake
+                </h1>
+                <img src="./images/pancake/photo1.jpg" alt="pancakeone" className="w-42 h-54 p-4 rounded-full"></img>
+                <img src="./images/pancake/photo2.jpg" alt="pancaketwo" className="w-42 h-54 p-4 rounded-full"></img>
+            </div>
+          </div>
+        )}
         <div className="items-center justify-items-center min-h-screen w-auto h-auto">
-          <h1 className="mt-4 text-black dark:text-white font-medium font-mono">
+          <h1 className="mt-4 pt-10 text-black dark:text-white font-medium font-mono">
             Recent commit
           </h1>
-          <div className="bg-white rounded-xl h-32 w-72 p-6 mt-20">
+          <div className="bg-white rounded-xl h-auto w-100 p-6 mt-5">
             <span className="text-black font-medium font-mono">{commitMessage}</span>
           </div>
         </div>
