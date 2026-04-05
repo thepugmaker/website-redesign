@@ -69,7 +69,7 @@ export default function Home() {
 
       elements.forEach((el, i) => {
         gsap.fromTo(
-          el,
+          elements,
           { y: 50, opacity: 0 },
           {
             y: 0,
