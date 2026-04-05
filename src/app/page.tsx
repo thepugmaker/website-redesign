@@ -3,15 +3,10 @@
 import Image from "next/image";
 import type { Metadata } from "next";
 import { useRouter } from 'next/navigation'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { gsap } from "gsap";
 
 import pfpimage from "./images/pfpimage.jpeg";
-
-const metadata: Metadata = {
-  title: "MrPugPugs website",
-  description: "This is MrPugPugs website!",
-};
 
 console.log("https://github.com/thepugmaker/website-redesign");
 
@@ -27,6 +22,8 @@ export default function Home() {
     const [showExtraDivs, setExtraLinks] = useState(false);
     const [showPancakePIcs, setPancakePics] = useState(false);
 
+    const maininfo = useRef(null);
+
     const today = new Date();
    
     useEffect(() => {
@@ -40,7 +37,7 @@ export default function Home() {
           }
   
           const data = await response.json();
-          setCommitMessage(data[0].commit.message); // Fetches the message of the latest commit
+          setCommitMessage(data[0].commit.message);
           setLoading(false);
       };
   
@@ -66,13 +63,33 @@ export default function Home() {
     const togglePancakeDivs = () => {
       setPancakePics(!showPancakePIcs);
     };
+    
+    useEffect(() => {
+      const elements = gsap.utils.toArray(".animate");
+
+      elements.forEach((el, i) => {
+        gsap.fromTo(
+          el,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 2,
+            ease: "power3.out",
+            delay: i * 0.2 
+          }
+        );
+      });
+    }, []);
 
   return (
-    <div className="items-center justify-items-center min-h-screen">
+    <div className="items-center justify-items-center min-h-screen animate">
+
       <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
         Welcome to https://mrpugpug.com 
       </h1>
-      <div className="mt-16">
+
+      <div className="mt-16" ref={maininfo}>
         <div className="bg-linear-to-r from-blue-500 to-purple-700 h-84 w-96 p-6 justify-items-center items-center rounded-xl border-red-500 border-2">
           <img src={pfpimage.src} alt="Logo" className="h-32 w-32 rounded-full mx-auto"></img>
           <dd className="text-white font-medium mt-2 font-mono">
@@ -82,7 +99,7 @@ export default function Home() {
             I create website, applcations, and games
           </dd>
           <div className="justify-items-center items-center">
-            <button className="h-16 w-36 bg-linear-to-r from-purple-900 to-red-900 rounded-xl hover:from-purple-500 hover:to-red-700 transition duration-500" onClick={toggleAboutDiv}>
+            <button className="h-12 w-40 bg-linear-to-r from-purple-900 to-red-900 rounded-xl mt-3 hover:from-purple-500 hover:to-red-700 transition duration-500" onClick={toggleAboutDiv}>
               <dd className="text-white font-medium font-mono">
                 More about me!
               </dd>
@@ -90,8 +107,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       {showAboutMeDivs && (
-        <div className="h-auto w-auto bg-linear-to-r from-red-500 to-blue-600 justify-items-center rounded-xl m-12 p-6">
+        <div className="h-auto w-auto bg-linear-to-r from-red-500 to-blue-600 rounded-xl m-12 p-6">
             <dd className="text-white font-medium font-mono mt-4">
                 I develop websites, software, and games. My game downloads are at https://puggamedev.itch.io/
             </dd>
@@ -99,27 +117,29 @@ export default function Home() {
                 Linux is another thing I like, I've used Arch Linux, Ubuntu, Kubuntu and Fedora.
             </dd>
             <dd className="text-white font-medium font-mono mt-8">
-                Designer of websites, software, and games (Based on my favorite genre of games). Designs are existing in Figma or my head, sometimes on paper.
+                Designer of websites, software, and games (Based on my favorite genre of games).
             </dd>
             <dd className="text-white font-medium font-mono mt-10">
-                Programming skills I own.
-                Web development - React, Tailwind css, HTML and CSS, NextJS, and Typescript.
-                Software development - .NET, C++, and Java.
-                Game development - Unity, Unreal Engine, and Roblox Studio.
-                These langauges/tools are the ones I have experience with.
+                Programming skills I own. <br />
+                Web development - React, Tailwind css, HTML and CSS, NextJS, and Typescript. <br />
+                Software development - .NET, C++, and Java. <br />
+                Game development - Unity, Unreal Engine, and Roblox Studio. <br />
+                These langauges/tools are the ones I have experience with. <br />
             </dd>
             <dd className="text-white font-medium font-mono mt-10">
-                This website was made with React, NextJS, Tailwind CSS, and the NextJS app router.
+                This website was made with React, NextJS, Tailwind CSS, Gsap, and the NextJS app router. <br />
                 If you want to see the behind of the site look here! https://github.com/thepugmaker/website-redesign
             </dd>
         </div>
       )}
+
       <div className="mt-24 gird grid-flow-col">
         <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={toggleWorkDiv}>
           <dd className="text-white font-medium font-mono">
             Check out my projects
           </dd>
         </button>
+
         {showWorkDivs && (
           <div className="h-auto w-auto bg-linear-to-r from-red-500 to-blue-600 justify-items-center rounded-xl p-4 ml-8">
             <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
@@ -141,11 +161,13 @@ export default function Home() {
             </div>
           </div>
         )}
+
         <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggletwo" onClick={toggleContactDiv}>
           <dd className="text-white font-medium font-mono">
             Contact me
           </dd>
         </button>
+
         {showContactDivs && (
           <div className="mt-16">
             <div className="bg-linear-to-r from-blue-500 to-purple-700 justify-items-center rounded-xl w-160 h-64">
@@ -163,11 +185,13 @@ export default function Home() {
             </div>
           </div>
         )}
+
         <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggleotherone" onClick={toggleExtraLink}>
           <dd className="text-white font-medium font-mono">
             Extra links
           </dd>
         </button>
+
         {showExtraDivs && (
           <div className="items-center justify-items-center">
             <button className="rounded-xl bg-blue-500 w-40 h-10 mt-12" onClick={() => router.push('https://github.com/thepugmaker')}>
@@ -182,11 +206,13 @@ export default function Home() {
             </button>
           </div>
         )}
+
          <button className="rounded-xl bg-linear-to-r from-blue-950 to-purple-900 hover:from-blue-500 hover:to-purple-500 w-40 h-36 transition duration-500 animate-wiggle" onClick={togglePancakeDivs}>
           <dd className="text-white font-medium font-mono">
             Show Pics of my dog Pancake
           </dd>
         </button>
+
         {showPancakePIcs && (
           <div className="mt-16">
             <div className="bg-linear-to-r from-blue-500 to-purple-700 rounded-xl w-160 h-64 flex justify-between">
@@ -198,6 +224,7 @@ export default function Home() {
             </div>
           </div>
         )}
+
         <div className="items-center justify-items-center min-h-screen w-auto h-auto">
           <h1 className="mt-4 pt-10 text-black dark:text-white font-medium font-mono">
             Recent commit
@@ -206,6 +233,7 @@ export default function Home() {
             <span className="text-black font-medium font-mono">{commitMessage}</span>
           </div>
         </div>
+        
     </div>
   </div>
   );
