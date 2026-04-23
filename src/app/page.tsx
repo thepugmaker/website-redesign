@@ -158,6 +158,11 @@ export default function Home() {
                   Scale to form, A game made for GMTK Game jam 2024
                 </dd>
               </button>
+              <button className="bg-linear-to-r from-purple-900 to-amber-950 h-24 w-48 hover:from-purple-600 hover:to-amber-500 transition duration-500 rounded-xl ml-4 p-2" onClick={() => router.push('https://codexflow.mrpugpug.com/')}>
+                <dd className="text-white font-medium font-mono">
+                  CodexFlow, Documentation software
+                </dd>
+              </button>
             </div>
           </div>
         )}
