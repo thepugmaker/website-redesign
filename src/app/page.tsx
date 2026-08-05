@@ -83,7 +83,7 @@ export default function Home() {
     }, []);
 
   return (
-    <div className="items-center justify-items-center min-h-screen animate">
+    <div className="items-center justify-items-center justify-center min-h-screen animate">
 
       <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
         Welcome to https://mrpugpug.com 
