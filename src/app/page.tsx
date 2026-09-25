@@ -83,7 +83,7 @@ export default function Home() {
     }, []);
 
   return (
-    <div className="items-center justify-items-center justify-center min-h-screen animate">
+    <div className="flex flex-col items-center justify-items-center justify-center min-h-screen animate">
 
       <h1 className="mt-4 text-black dark:text-white font-medium font-mono ">
         Welcome to https://mrpugpug.com 
@@ -234,8 +234,8 @@ export default function Home() {
           <h1 className="mt-4 pt-10 text-black dark:text-white font-medium font-mono">
             Recent commit
           </h1>
-          <div className="bg-white rounded-xl h-auto w-100 p-6 mt-5">
-            <span className="text-black font-medium font-mono">{commitMessage}</span>
+          <div className="bg-black rounded-xl h-auto w-100 p-6 mt-5 dark:bg-white">
+            <span className="text-white dark:text-black font-medium font-mono">{commitMessage}</span>
           </div>
         </div>
         
