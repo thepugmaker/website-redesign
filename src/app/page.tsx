@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react';
 import { gsap } from "gsap";
-
-import pfpimage from "./images/pfpimage.jpeg";
+import AboutMe from "./components/aboutme";
+import Contact from "./components/contact";
 
 const metadata: Metadata = {
   title: "MrPugPugs website",
@@ -21,10 +21,14 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+<<<<<<< Updated upstream
     const [showAboutMeDivs, setShowAbout] = useState(false);
     const [showWorkDivs, setShowWork] = useState(false);
     const [showContactDivs, setShowContact] = useState(false);
     const [showExtraDivs, setExtraLinks] = useState(false);
+=======
+    const maininfo = useRef(null);
+>>>>>>> Stashed changes
 
     const today = new Date();
    
@@ -45,6 +49,7 @@ export default function Home() {
   
       fetchCommitMessage();
     }, []);
+<<<<<<< Updated upstream
 
     const toggleAboutDiv = () => {
       setShowAbout(!showAboutMeDivs);
@@ -185,7 +190,40 @@ export default function Home() {
             <span className="text-black font-medium font-mono">{commitMessage}</span>
           </div>
         </div>
+=======
+    
+    useEffect(() => {
+      const elements = gsap.utils.toArray(".animate");
+
+      elements.forEach((el, i) => {
+        gsap.fromTo(
+          elements,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 2,
+            ease: "power3.out",
+            delay: i * 0.2 
+          }
+        );
+      });
+    }, []);
+
+  return (
+    <div>
+      <AboutMe />
+      <Contact />
+
+      <div className="min-h-screen w-auto h-auto ml-2">
+          <div className="bg-white rounded-xl h-auto w-100 p-6 mt-1">
+            <h1 className="text-black font-medium font-mono mb-2">
+              Most recent commit on main:
+            </h1>
+            <span className="text-black font-medium font-mono">{commitMessage}</span>
+          </div>
+        </div>
+>>>>>>> Stashed changes
     </div>
-  </div>
   );
 }
