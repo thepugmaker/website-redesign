@@ -1,18 +1,16 @@
 # This is my website redesign repo
-This is where all the source code for my website is, and where all my project info is also at! So this code is very important to my domain.
-I also use this code as a template for other websites so it has close design to this website unless I make a joke website like drinkwater.mrpugpug.com with google sites, or use html
-Its under the MIT license so remember that you have to credit me for it if you use it!
+This is my website redesign built in React.js instead of plain HTML and CSS. This where I put the code for updates to my site and for access everywhere.
 
-## List of libarys
+## List of libaries
 React JS, With Next JS App router,
 Tailwind css,
 Typescript
 
 ### Guide
-To edit or use my code you will need to install node.js, and next.js. 
-I suggest using VSCode and the tailwind css plugin.
-After you have install the required components, clone with git, and open it in your ide.
-Once that is done you'll want to run ```npm run build``` to get node and next js working. 
+To edit or use my code you will the libaries above. 
+I suggest using VSCode and the Tailwind css plugin.
+After you have install the required components, clone with git, and open it in your ide of choice.
+Once that is done you'll want to run ```npm run build``` or ```npm run install``` (to install all required libraries) to get the website working working. 
 When the build is done you'll be ready to start development or running my website source code!
 
 ### Run the development server

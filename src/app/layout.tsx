@@ -13,6 +13,23 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export const metadata = {
+  title: "MrPugPug",
+  description: "MrPugPug's website",
+  openGraph: {
+    title: "MrPugPug",
+    description: "MrPugPug's website",
+    url: "https://mrpugpug.com",
+    siteName: "MrPugPug's website",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    title: "MrPugPug",
+    description: "MrPugPug's website",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
